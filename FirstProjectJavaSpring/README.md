@@ -1,43 +1,59 @@
-# First Spring Boot MVC Project
+# Spring Boot MVC Application
 
-## About the Project
+## Project Introduction
 
-This is a simple Spring Boot web application created to understand the basics of the MVC (Model–View–Controller) architecture in Java.
+This project is a basic Spring Boot MVC application developed for learning how Spring controllers and views work together.
 
-The project shows how a controller can receive a request from the browser, send data to a view, and display it using a web page.
+The application receives requests from the browser and returns a web page using Thymeleaf templates.
 
-## How It Works
+---
 
-1. The application starts using Spring Boot.
-2. A user opens a URL in the browser.
-3. The controller handles the request.
-4. The controller sends data (name parameter) to the view.
-5. The view (`greeting.html`) displays a greeting message and an image.
+## Application Flow
+
+- User opens the application in browser
+- Spring controller handles the request
+- Data is passed from controller to HTML page
+- Thymeleaf displays the result on the screen
 
 Example URL:
 
-```
-http://localhost:8080/greeting?name=John
+```text
+http://localhost:8080/greeting?name=Alex
 ```
 
-The page will display:
+Example Output:
 
+```text
+Hello, Alex!
 ```
-Hello, John!
-```
+
+---
 
 ## Technologies Used
 
-* Java
-* Spring Boot
-* Spring MVC
-* Thymeleaf
-* Maven
+- Java
+- Spring Boot
+- Spring MVC
+- Thymeleaf
+- Maven
 
-## Project Structure
+---
 
-* `controller` – handles HTTP requests
-* `templates` – HTML pages (views)
-* `static/images` – static resources like images
+## Project Packages
 
+- `controller` → handles browser requests
+- `templates` → contains HTML files
+- `static` → stores images and static resources
 
+---
+
+## Running the Project
+
+1. Open project in IntelliJ IDEA
+2. Reload Maven dependencies
+3. Run the main application class
+4. Open browser on:
+
+```text
+http://localhost:8080
+```

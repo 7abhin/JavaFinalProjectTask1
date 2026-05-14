@@ -15,7 +15,7 @@ The application accepts a request from the browser and returns a web page with a
 The user opens the following URL in the browser:
 
 ```text
-http://localhost:8080/greeting?name=David
+http://localhost:8080/greeting?name=Abhin
 ```
 
 The application reads the `name` parameter and displays a greeting message on the HTML page.
@@ -23,7 +23,7 @@ The application reads the `name` parameter and displays a greeting message on th
 Example output:
 
 ```text
-Hello, David!
+Hello, Abhin!
 ```
 
 ---

@@ -1,35 +1,45 @@
 # Spring Boot MVC Application
 
-## Project Introduction
+## About The Project
 
-This project is a basic Spring Boot MVC application developed for learning how Spring controllers and views work together.
+This project is a simple MVC application created using Spring Boot and Thymeleaf.
 
-The application receives requests from the browser and returns a web page using Thymeleaf templates.
-
----
-
-## Application Flow
-
-- User opens the application in browser
-- Spring controller handles the request
-- Data is passed from controller to HTML page
-- Thymeleaf displays the result on the screen
-
-Example URL:
-
-```text
-http://localhost:8080/greeting?name=Alex
-```
-
-Example Output:
-
-```text
-Hello, Alex!
-```
+The application accepts a request from the browser and returns a web page with a greeting message.
 
 ---
 
-## Technologies Used
+## Use Case
+
+### Greeting Page
+
+The user opens the following URL in the browser:
+
+```text
+http://localhost:8080/greeting?name=David
+```
+
+The application reads the `name` parameter and displays a greeting message on the HTML page.
+
+Example output:
+
+```text
+Hello, David!
+```
+
+---
+
+## Screenshot
+
+Example of greeting page:
+
+
+<img width="1600" height="840" alt="WhatsApp Image 2026-05-14 at 6 12 59 PM" src="https://github.com/user-attachments/assets/985583c6-c214-4199-888a-7b1e1d543fbc" />
+
+
+
+---
+
+## Technologies
 
 - Java
 - Spring Boot
@@ -39,21 +49,8 @@ Hello, Alex!
 
 ---
 
-## Project Packages
+## Project Structure
 
-- `controller` → handles browser requests
-- `templates` → contains HTML files
-- `static` → stores images and static resources
-
----
-
-## Running the Project
-
-1. Open project in IntelliJ IDEA
-2. Reload Maven dependencies
-3. Run the main application class
-4. Open browser on:
-
-```text
-http://localhost:8080
-```
+- `controller` → handles requests
+- `templates` → HTML pages
+- `static` → images and static files
